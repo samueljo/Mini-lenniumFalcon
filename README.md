@@ -22,7 +22,7 @@ The app will be a single screen with links to the Github repo, my LinkedIn, port
 
 This project will be implemented using the following technologies:
 
-- G'rails light-weight MVC framework
+- Laris light-weight MVC framework
 - Vanilla JavaScript
 - `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering
 - Webpack to bundle and serve various scripts
