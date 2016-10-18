@@ -16,6 +16,8 @@ With Mini-lennium Falcon, users will be able to:
 
 The app will be a single screen with links to the Github repo, my LinkedIn, portfolio, and the About modal. There will also be a button to toggle the sound which can also be toggled with 's'.
 
+<img src="./docs/wireframes/main.png" />
+
 ### Architecture & Technologies
 
 This project will be implemented using the following technologies:
