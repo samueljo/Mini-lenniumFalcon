@@ -25,7 +25,7 @@ h5 {
   text-align: center;
 }
 
-#game-canvas {
+#canvas {
   background: #fff;
   display: inline;
 }
@@ -33,7 +33,7 @@ h5 {
 .footer {
   width: 900px;
   display: flex;
-  margin: 0 auto;
+  margin: 15px auto;
   justify-content: space-between;
   border: 2px double red;
   padding: 10px 5px;
