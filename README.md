@@ -2,7 +2,7 @@
 
 ### Background
 
-Mini-lennium Falcon is a spin off of the classic game Helicopter crossed over with the beloved, legendary starship the Millennium Falcon from the Star Wars series. Fly Han and Chewbacca through space, avoiding asteroids, comets and other space debris coming your way. The backend of this game is built using my own MVC framework Guardrail.
+Mini-lennium Falcon is a spin off of the classic game Helicopter crossed over with the beloved, legendary starship the Millennium Falcon from the Star Wars series. Fly Han and Chewbacca through space, avoiding asteroids, comets and other space debris coming your way. [Delayed bonus: The backend of this game is built using my own MVC framework Laris].
 
 ### Functionality & MVP
 
@@ -22,7 +22,7 @@ The app will be a single screen with links to the Github repo, my LinkedIn, port
 
 This project will be implemented using the following technologies:
 
-- Laris light-weight MVC framework
+- [Delayed bonus: Laris light-weight MVC framework]
 - Vanilla JavaScript
 - `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering
 - Webpack to bundle and serve various scripts
