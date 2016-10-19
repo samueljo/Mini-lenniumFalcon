@@ -1,0 +1,14 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: #000;
+}
+
+h1 {
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  border-top: 5px double red;
+  border-bottom: 5px double red;
+}
