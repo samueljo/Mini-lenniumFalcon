@@ -29,3 +29,24 @@ h5 {
   background: #fff;
   display: inline;
 }
+
+.footer {
+  width: 900px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  border: 2px double red;
+  padding: 10px 5px;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.link:hover {
+  background: #aaa;
+  color: red;
+}
