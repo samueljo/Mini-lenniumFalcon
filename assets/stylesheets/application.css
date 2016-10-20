@@ -32,6 +32,7 @@ h5 {
 }
 
 .footer {
+  position: relative;
   width: 900px;
   display: flex;
   margin: 15px auto;
@@ -54,12 +55,12 @@ h5 {
 
 .points {
   position: absolute;
-  bottom: 25px;
-  left: 75px;
+  top: -60px;
+  left: 30px;
 }
 
 .highscore {
   position: absolute;
-  bottom: 25px;
-  right: 75px;
+  top: -60px;
+  right: 30px;
 }
