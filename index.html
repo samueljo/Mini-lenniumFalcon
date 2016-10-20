@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/stylesheets/css_reset.css">
     <link rel="stylesheet" href="assets/stylesheets/application.css">
+    <link rel="stylesheet" href="assets/stylesheets/modal.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script src="./joQuery/lib/joquery.js"></script>
@@ -21,11 +22,36 @@
       <canvas id="canvas"></canvas>
     </div>
 
+    <div id='about-modal' class='about-modal'>
+      <div class='inner-modal'>
+        <a href="#close" title='Close' class='close'>X</a>
+
+        <h1 class='modal-header'>Mini-lennium Falcon</h1>
+        <span id='start'>Start</span>
+        <br/><br/>
+        <p class='modal-desc'>
+          Plow your way through space in hyperspeed with the Mini-lennium Falcon (or YT-1200)!
+          <br/><br/>
+          But be careful to avoid the incoming asteroids & other potential enemy cruisers that you may run into.
+          <br/><br/>
+          Collect the blaster cannon powerups along the way to collect ammunition.
+        </p>
+        <h1 class='modal-header'>How To Play</h1>
+        <p class='modal-desc'>
+          *Hold 'Spacebar' to stay afloat.
+          <br/>
+          *Press 'Enter' to shoot.
+          <br/>
+          *Press 'S' to toggle sound.
+        </p>
+      </div>
+    </div>
+
     <div class='footer'>
       <span class='points'></span>
       <span class='highscore'></span>
       <span>
-        <span class='link'>About</span>
+        <a href="#about-modal" class='link'>About</a>
       </span>
       <span>
         <a class='link' href="https://github.com/samueljo/Mini-lenniumFalcon">GitHub</a>

@@ -54,12 +54,16 @@ h5 {
 }
 
 .points {
+  z-index: 1;
+  color: #fff;
   position: absolute;
   top: -60px;
   left: 30px;
 }
 
 .highscore {
+  z-index: 1;
+  color: #fff;
   position: absolute;
   top: -60px;
   right: 30px;
