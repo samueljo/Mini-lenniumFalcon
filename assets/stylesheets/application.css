@@ -23,6 +23,7 @@ h5 {
 #canvas-container {
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 #canvas {
@@ -49,4 +50,16 @@ h5 {
 .link:hover {
   background: #aaa;
   color: red;
+}
+
+.points {
+  position: absolute;
+  bottom: 25px;
+  left: 75px;
+}
+
+.highscore {
+  position: absolute;
+  bottom: 25px;
+  right: 75px;
 }
