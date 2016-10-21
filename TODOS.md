@@ -1,3 +1,9 @@
+- [ ] Blaster powerup
+- [ ] Slow powerup
+- [ ] Animate asteroid explosions & sound bytes
+- [ ] Animate falcon trail
+- [ ] Han sound bytes on interval
+- [ ] Blaster cannon sound bytes
 - [ ] Create cookie to hold high score for computer
 - [ ] Fix lagging
 - [ ] Asteroid wall

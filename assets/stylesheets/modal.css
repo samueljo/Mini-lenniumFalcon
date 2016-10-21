@@ -82,6 +82,7 @@
   position: absolute;
   cursor: pointer;
   top: 300px !important;
+  bottom: initial;
   left: 50%;
   transform: translateX(-50%);
   width: 22% !important;
