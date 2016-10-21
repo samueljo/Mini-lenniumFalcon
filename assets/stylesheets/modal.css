@@ -78,8 +78,12 @@
 }
 
 .game-modal {
+  color: #fff;
+  position: absolute;
   cursor: pointer;
-  top: 200px !important;
+  top: 300px !important;
+  left: 50%;
+  transform: translateX(-50%);
   width: 22% !important;
   background: #E50914 !important;
   padding: 10px 20px !important;
