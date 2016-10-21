@@ -1,4 +1,5 @@
-.about-modal {
+.modal {
+  opacity: 1;
   position: fixed;
   color: #fff;
   left: 0;
@@ -7,19 +8,18 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
-  opacity:0;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-
-.about-modal:target {
-  opacity: 1;
   pointer-events: auto;
 }
 
-.about-modal > div {
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal > div {
   width: 50%;
   position: relative;
   margin: 10% auto;
@@ -48,14 +48,8 @@
   text-align: center;
   top: -10px;
   width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
 .close:hover {
@@ -66,18 +60,33 @@
   font-size: 20px;
 }
 
-#start {
+.start {
   font-size: 20px;
   padding: 5px 10px;
-  background: red;
+  background: #E50914;
   border-radius: 5px;
   cursor: pointer;
 }
 
-#start:hover {
+.start:hover {
+  background: red;
   padding: 7px 12px;
 }
 
 .modal-desc {
   font-size: 14px;
+}
+
+.game-modal {
+  cursor: pointer;
+  top: 200px !important;
+  width: 22% !important;
+  background: #E50914 !important;
+  padding: 10px 20px !important;
+  text-align: center !important;
+}
+
+.game-modal:hover {
+  background: red !important;
+  padding: 15px 25px !important;
 }

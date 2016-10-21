@@ -18,16 +18,21 @@
       (Built with JavaScript, Canvas & own JS library joQuery)
     </h5>
 
-    <div id="canvas-container">
-      <canvas id="canvas"></canvas>
+    <div id='canvas-container' class='canvas'>
+      <canvas id='canvas'></canvas>
     </div>
 
-    <div id='about-modal' class='about-modal'>
+    <div class='sub-modal modal hidden'>
+      <div class='start game-modal'>
+      </div>
+    </div>
+
+    <div class='modal'>
       <div class='inner-modal'>
-        <a href="#close" title='Close' class='close'>X</a>
+        <a class='close'>X</a>
 
         <h1 class='modal-header'>Mini-lennium Falcon</h1>
-        <span id='start'>Start</span>
+        <span class='start'>Start</span>
         <br/><br/>
         <p class='modal-desc'>
           Plow your way through space in hyperspeed with the Mini-lennium Falcon (or YT-1200)!
@@ -51,16 +56,16 @@
       <span class='points'></span>
       <span class='highscore'></span>
       <span>
-        <a href="#about-modal" class='link'>About</a>
+        <a class='about link'>About</a>
       </span>
       <span>
-        <a class='link' href="https://github.com/samueljo/Mini-lenniumFalcon">GitHub</a>
+        <a class='link' href='https://github.com/samueljo/Mini-lenniumFalcon'>GitHub</a>
       </span>
       <span>
-        <a class='link' href="#">Portfolio</a>
+        <a class='link' href='#'>Portfolio</a>
       </span>
       <span>
-        <a class='link' href="https://www.linkedin.com/in/samueljo1">LinkedIn</a>
+        <a class='link' href='https://www.linkedin.com/in/samueljo1'>LinkedIn</a>
       </span>
     </div>
   </body>
