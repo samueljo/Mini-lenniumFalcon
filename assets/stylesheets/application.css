@@ -49,8 +49,17 @@ h5 {
 }
 
 .link:hover {
-  background: #aaa;
+  background: #fff;
   color: red;
+}
+
+.blasters {
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  top: -400px;
+  right: 30px;
+  font-size: 12px;
 }
 
 .points {
@@ -67,4 +76,19 @@ h5 {
   position: absolute;
   top: -60px;
   right: 30px;
+}
+
+.timer {
+  position: absolute;
+  left: 46vw;
+  top: 250px;
+  font-size: 100px;
+  color: #fff;
+  z-index: 1;
+}
+
+.sub-close {
+  top: 200px;
+  width: 22%;
+  z-index: 2;
 }

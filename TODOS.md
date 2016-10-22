@@ -1,11 +1,16 @@
+- [ ] Asteroid wall
+- [X] Create cookie to hold high score for computer
+- [X] Blaster powerup
+- [X] Animate asteroid explosions & sound bytes
+- [X] Animate falcon trail
+- [X] Han sound bytes on interval
+- [X] Blaster cannon sound bytes
+- [X] Fix lagging
 - [X] Sprites for images
 - [X] Background image that moves
 - [X] Smooth out the up motion for the ship
-- [ ] Asteroid wall
-- [ ] Incorporate modal for lost screen with replay button
-- [ ] Incorporate modal for about to show directions
-- [ ] Create cookie to hold high score for computer
+- [X] Incorporate modal for lost screen with replay button
+- [X] Incorporate modal for about to show directions
 - [X] Skew ship sprite depending on acceleration
-  http://stackoverflow.com/questions/10426887/how-to-skew-image-like-this
 
 - [ ] Bonuses
