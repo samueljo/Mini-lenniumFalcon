@@ -1,12 +1,11 @@
-- [ ] Blaster powerup
-- [ ] Slow powerup
-- [ ] Animate asteroid explosions & sound bytes
-- [ ] Animate falcon trail
-- [ ] Han sound bytes on interval
-- [ ] Blaster cannon sound bytes
-- [ ] Create cookie to hold high score for computer
-- [ ] Fix lagging
 - [ ] Asteroid wall
+- [X] Create cookie to hold high score for computer
+- [X] Blaster powerup
+- [X] Animate asteroid explosions & sound bytes
+- [X] Animate falcon trail
+- [X] Han sound bytes on interval
+- [X] Blaster cannon sound bytes
+- [X] Fix lagging
 - [X] Sprites for images
 - [X] Background image that moves
 - [X] Smooth out the up motion for the ship
