@@ -1,4 +1,5 @@
 - [ ] Asteroid wall
+- [ ] Fix sound muting
 - [X] Create cookie to hold high score for computer
 - [X] Blaster powerup
 - [X] Animate asteroid explosions & sound bytes
