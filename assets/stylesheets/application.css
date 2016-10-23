@@ -31,7 +31,7 @@ h5 {
   display: inline;
 }
 
-.footer {
+.sub-canvas {
   position: relative;
   width: 900px;
   display: flex;
@@ -60,6 +60,20 @@ h5 {
   top: -400px;
   right: 30px;
   font-size: 12px;
+}
+
+.sound {
+  z-index: 1;
+  position: absolute;
+  top: -400px;
+  left: 30px;
+  height: 25px;
+  width: 25px;
+  background-image: url('../sound.png');
+}
+
+.muted {
+  background-image: url('../muted.png');
 }
 
 .points {
