@@ -1,4 +1,6 @@
 - [ ] Asteroid wall
+- [ ] Add start button to main page
+- [ ] Add directions on main page
 - [ ] Fix sound muting
 - [X] Create cookie to hold high score for computer
 - [X] Blaster powerup
