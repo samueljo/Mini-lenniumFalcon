@@ -1,60 +1,56 @@
 ## Mini-lennium Falcon
 
+[Play here](http://www.samueljo.com/Mini-lenniumFalcon/)
+
+![main](assets/main.png)
+
 ### Background
 
-Mini-lennium Falcon is a spin off of the classic game Helicopter crossed over with the beloved, legendary starship the Millennium Falcon from the Star Wars series. Fly Han and Chewbacca through space, avoiding asteroids, comets and other space debris coming your way. [Delayed bonus: The backend of this game is built using my own MVC framework Laris].
+Mini-lennium Falcon is a spin off of the classic game Helicopter crossed over with the beloved, legendary starship the Millennium Falcon from the Star Wars series. It was written in JavaScript and uses Canvas for 2D rendering and own library joQuery for DOM manipulation.
 
-### Functionality & MVP
+### How to Play
 
-With Mini-lennium Falcon, users will be able to:
-- [ ] Seamlessly navigate through space to avoid asteroids.
-- [ ] High scores will be saved in database.
-- [ ] Modal to explain directions and rules
-- [ ] Production README
+Fly Han and Chewbacca through space but be careful to avoid hitting asteroids by hitting `SPACE`. Pick up powerups along the way to either stock up on blaster cannon ammunition or destroy all asteroids present on the screen. Hit `ENTER` to shoot and `S` to toggle sound.
 
-### Wireframes
+### Features
 
-The app will be a single screen with links to the Github repo, my LinkedIn, portfolio, and the About modal. There will also be a button to toggle the sound which can also be toggled with 's'.
+#### 2D Rendering & Sprite-ing
+All 2D rendering is done using HTML 5 Canvas. By overlaying sprite images over 'pseudo Canvas elements', I was able to detect all collisions between `Ship` and `Asteroid`, `Ship` and `PowerUp`, and `Blaster` and `Asteroid`.
 
-<img src="./docs/main.png" />
+```javascript
+draw(ctx) {
+  const image = Sprite.createImage(this.path);
+  const imgOffsetX = this.pos[0] - this.xDim / 2;
+  const imgOffsetY = this.imgOffsetY || this.pos[1] - this.yDim / 2;
 
-### Architecture & Technologies
+  ctx.drawImage(image, imgOffsetX, imgOffsetY, this.xDim, this.yDim);
+}
+```
 
-This project will be implemented using the following technologies:
+#### Points
+A high score is stored in local storage and over-written if there is no existing high score or if the new score is greater than the existing one.
 
-- [Delayed bonus: Laris light-weight MVC framework]
-- Vanilla JavaScript
-- `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering
-- Webpack to bundle and serve various scripts
+Both the points and high score (along with the modals, blaster cannon count, and sound icons) are manipulated using my own, light-weight DOM manipulation library, joQuery.
 
-Scripts:
-`moving_object.js`
-`ship.js`
-`wormhole.js`
-`game.js`
-`game_view.js`
+```javascript
+let isNewHighScore = (this.game.points > localStorage.getItem('highScore'));
+if (!localStorage.getItem('highScore') || isNewHighScore) {
+  localStorage.setItem('highScore', this.game.points);
+}
+$jo('.highscore').text(`Highscore: ${localStorage.getItem('highScore')}`);
+```
 
-Bonus:
-- LRU cache for environment objects
+#### Audio
+All audio playing is done using JavaScript's HTMLAudioElement API.
 
-### Implementation Timeline
+I implemented an event listener using joQuery to toggle muting for all Audio elements in the document.
 
-**Day 1**
-- Setup Node modules and webpack and install `Easel.js`
-- Create basic entry file with all of the necessary script skeletons
-- Learn how to use `Easel` and refresh on `Canvas` to figure out logic for rendering an object and being able to move the environment as well as the object.
-
-**Day 2**
-- Build out the `game`, `game_view`, `moving_object`, `ship`, and `wormhole`
-- Be able to move the ship up and down
-- Have environment move at constant speed to the left
-- Collisions logic
-
-**Day 3**
-- Implement backend for saving high scores
-- Refactor to implement LRU cache
-- Implement 'About' modal
-- Style the frontend
-
-**Day 4**
-- Debug & Finish styling
+```javascript
+renderSound(isMuted) {
+  if (isMuted) {
+    $jo('.sound').addClass('muted');
+  } else {
+    $jo('.sound').removeClass('muted');
+  }
+}
+```

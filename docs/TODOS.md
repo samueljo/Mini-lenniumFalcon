@@ -1,7 +1,7 @@
 - [ ] Asteroid wall
 - [ ] Add start button to main page
 - [ ] Add directions on main page
-- [ ] Fix sound muting
+- [X] Fix sound muting
 - [X] Create cookie to hold high score for computer
 - [X] Blaster powerup
 - [X] Animate asteroid explosions & sound bytes
@@ -15,5 +15,3 @@
 - [X] Incorporate modal for lost screen with replay button
 - [X] Incorporate modal for about to show directions
 - [X] Skew ship sprite depending on acceleration
-
-- [ ] Bonuses
