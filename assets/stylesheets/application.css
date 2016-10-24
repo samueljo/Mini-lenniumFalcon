@@ -106,3 +106,25 @@ h5 {
   width: 22%;
   z-index: 2;
 }
+
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(-10deg); }
+  50%  { -webkit-transform:  rotate(10deg); }
+  100%  { -webkit-transform:  rotate(-10deg); }
+}
+
+.chewy {
+  opacity: 1;
+  position: fixed;
+  left: 25%;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 100000;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+  pointer-events: auto;
+  -webkit-animation: wobble 1s infinite;
+}
