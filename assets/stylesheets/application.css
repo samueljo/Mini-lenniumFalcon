@@ -115,9 +115,9 @@ h5 {
 
 .chewy {
   opacity: 1;
-  position: fixed;
-  left: 25%;
-  top: 15%;
+  position: absolute;
+  left: 22%;
+  top: -500px;
   right: 0;
   bottom: 0;
   object-fit: cover;
