@@ -50,6 +50,7 @@
   width: 24px;
   cursor: pointer;
   border-radius: 15px;
+  text-decoration: none;
 }
 
 .close:hover {
@@ -94,4 +95,10 @@
 .game-modal:hover {
   background: red !important;
   padding: 15px 25px !important;
+}
+
+.leader-list {
+  list-style: decimal;
+  list-style-position: inside;
+  text-align: left;
 }
