@@ -97,8 +97,7 @@
   padding: 15px 25px !important;
 }
 
-.leader-list {
-  list-style: decimal;
-  list-style-position: inside;
-  text-align: left;
+.leader-inner {
+  width: 35% !important;
+  text-align: center;
 }
