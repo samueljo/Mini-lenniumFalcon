@@ -2,7 +2,7 @@ const DOMNodeCollection = require("./dom_node_collection");
 
 const funcQueue = [];
 
-window.$jo = function (arg) {
+const $jo = function (arg) {
   if (arg === window) {
     return new DOMNodeCollection(
       [window]
@@ -37,7 +37,7 @@ function execute() {
   });
 }
 
-window.$jo.extend = function (...objects) {
+$jo.extend = function (...objects) {
   const result = objects[0];
   objects.slice(1).forEach( (object) => {
     Object.keys(object).forEach( (key) => {
@@ -48,7 +48,7 @@ window.$jo.extend = function (...objects) {
   return result;
 };
 
-window.$jo.ajax = function (options) {
+$jo.ajax = function (options) {
   let defaults = {
     method: "GET",
     url: "./",
@@ -73,3 +73,5 @@ window.$jo.ajax = function (options) {
 };
 
 document.addEventListener("DOMContentLoaded", execute);
+
+module.exports = $jo;
