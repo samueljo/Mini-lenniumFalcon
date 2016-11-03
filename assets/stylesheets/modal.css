@@ -100,6 +100,10 @@
   padding: 15px 25px !important;
 }
 
+.leader {
+  top: 100px;
+}
+
 .leader-inner {
   width: 35% !important;
   text-align: center;
