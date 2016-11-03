@@ -1,0 +1,32 @@
+{
+  "name": "Mini-lenniumFalcon",
+  "version": "1.0.0",
+  "description": "[Play here](http://www.samueljo.com/Mini-lenniumFalcon/)",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "firebase": "^3.5.3",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/.bin/webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samueljo/Mini-lenniumFalcon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samueljo/Mini-lenniumFalcon/issues"
+  },
+  "homepage": "https://github.com/samueljo/Mini-lenniumFalcon#readme"
+}

@@ -28,17 +28,9 @@ draw(ctx) {
 ```
 
 #### Points
-A high score is stored in local storage and over-written if there is no existing high score or if the new score is greater than the existing one.
+A global leaderboard is stored using Firebase. The main functionality of this database can be found in `./lib/util/database.js`. Only the top 10 scores are stored along with a name that is salted to allow for repeats without overwriting.
 
 Both the points and high score (along with the modals, blaster cannon count, and sound icons) are manipulated using my own, light-weight DOM manipulation library, joQuery.
-
-```javascript
-let isNewHighScore = (this.game.points > localStorage.getItem('highScore'));
-if (!localStorage.getItem('highScore') || isNewHighScore) {
-  localStorage.setItem('highScore', this.game.points);
-}
-$jo('.highscore').text(`Highscore: ${localStorage.getItem('highScore')}`);
-```
 
 #### Audio
 All audio playing is done using JavaScript's HTMLAudioElement API.

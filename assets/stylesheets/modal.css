@@ -50,6 +50,7 @@
   width: 24px;
   cursor: pointer;
   border-radius: 15px;
+  text-decoration: none;
 }
 
 .close:hover {
@@ -60,15 +61,18 @@
   font-size: 20px;
 }
 
-.start {
+.button {
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
   font-size: 20px;
   padding: 5px 10px;
   background: #E50914;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.start:hover {
+.button:hover {
   background: red;
   padding: 7px 12px;
 }
@@ -94,4 +98,24 @@
 .game-modal:hover {
   background: red !important;
   padding: 15px 25px !important;
+}
+
+.leader-inner {
+  width: 35% !important;
+  text-align: center;
+}
+
+.leader-form {
+  top: 150px;
+}
+
+.form {
+  height: 36px;
+  width: 75%;
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  margin-bottom: 10px;
 }
