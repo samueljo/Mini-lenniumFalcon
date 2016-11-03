@@ -25,12 +25,12 @@
       <canvas id='canvas'></canvas>
     </div>
 
-    <div class='start game-modal modal hidden'></div>
+    <div class='start button game-modal modal hidden'></div>
 
     <div class='modal'>
       <div class='inner-modal'>
         <h1 class='modal-header'>Mini-lennium Falcon</h1>
-        <span class='start'>Start</span>
+        <span class='start button'>Start</span>
         <br/><br/>
         <p class='modal-desc'>
           Plow your way through space with Chewbacca & Han in hyperspeed with the Mini-lennium Falcon (or YT-1200)!
@@ -53,10 +53,19 @@
     <div class='leader modal hidden'>
       <div class='leader-inner'>
         <a href="#close" title='Close' class='close'>X</a>
-
         <h1 class='leader modal-header'>Top 10 All Time</h1>
         <ul class='leader-list'>
         </ul>
+      </div>
+    </div>
+
+    <div class='leader-form modal hidden'>
+      <div class='leader-inner'>
+        <h1>New High Score!</h1>
+        <form autocomplete='off'>
+          <input type='text' class='form' placeholder='name' name='name' value='' maxLength='8'>
+          <button type='submit' class='form-button button'>Submit</button>
+        </form>
       </div>
     </div>
 

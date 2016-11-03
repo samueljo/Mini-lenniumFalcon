@@ -61,15 +61,18 @@
   font-size: 20px;
 }
 
-.start {
+.button {
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
   font-size: 20px;
   padding: 5px 10px;
   background: #E50914;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.start:hover {
+.button:hover {
   background: red;
   padding: 7px 12px;
 }
@@ -100,4 +103,19 @@
 .leader-inner {
   width: 35% !important;
   text-align: center;
+}
+
+.leader-form {
+  top: 150px;
+}
+
+.form {
+  height: 36px;
+  width: 75%;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  margin-bottom: 10px;
 }
