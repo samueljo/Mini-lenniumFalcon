@@ -72,6 +72,4 @@ $jo.ajax = function (options) {
   xhr.send(defaults.data);
 };
 
-document.addEventListener("DOMContentLoaded", execute);
-
 module.exports = $jo;
