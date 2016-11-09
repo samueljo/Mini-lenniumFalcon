@@ -16,7 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -w",
     "webpack": "./node_modules/.bin/webpack --watch"
   },
   "repository": {
